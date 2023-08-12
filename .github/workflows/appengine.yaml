@@ -1,20 +1,36 @@
 name: Deploy Project to App Engine
 
+on:
+  push:
+    branches: [ "main" ]
+    tags: ["v*"]
+  pull_request:
+    branches: [ "main" ]
+
 jobs:
-  job_id:
+  deploy:
+    runs-on: ubuntu-latest
     permissions:
       contents: 'read'
       id-token: 'write'
 
     steps:
+      - id: 'Checkout'
+        name: Checkout Repo
+        uses: actions/checkout@v3
+
       - id: 'auth'
+        name: Authenticate with GCP
         uses: 'google-github-actions/auth@v1'
         with:
           workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}
           service_account: ${{ secrets.SERVICE_ACCOUNT }}
 
       - id: 'deploy'
+        name: Deploy JAVA project
         uses: 'google-github-actions/deploy-appengine@v1'
+        with:
+          deliverables: app.yaml
 
       # Example of using the output
       - id: 'test'

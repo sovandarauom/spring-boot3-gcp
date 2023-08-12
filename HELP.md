@@ -17,6 +17,9 @@ The following guides illustrate how to use some features concretely:
 
 ### Others
 
+* [Encrypted secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
 * [Enabling keyless authentication from GitHub Actions](https://cloud.google.com/blog/products/identity-security/enabling-keyless-authentication-from-github-actions)
 * [Configuring OpenID Connect in Google Cloud Platform](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-google-cloud-platform)
 * [GitHub Action authenticates to Google Cloud](https://github.com/google-github-actions/auth#examples)
+* [Create a CI/CD Pipeline With Google App Engine and GitHub Actions](https://www.linkedin.com/pulse/create-cicd-pipeline-google-app-engine-github-actions-samuel-ichinga/)
+* [Deploy a Java app to Google Cloud App Engine auto by create git tag using GitHub Action](https://medium.com/@lxlgarnett/deploy-a-java-app-to-google-cloud-app-engine-auto-by-create-git-tag-using-github-action-1401e4c30faa)
