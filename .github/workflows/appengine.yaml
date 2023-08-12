@@ -9,6 +9,7 @@ on:
 
 jobs:
   deploy:
+    environment: DEV
     runs-on: ubuntu-latest
     permissions:
       contents: 'read'
