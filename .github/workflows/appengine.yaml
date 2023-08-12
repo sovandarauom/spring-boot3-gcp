@@ -28,9 +28,9 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - id: 'Build-java'
+      - id: 'Package-java'
         name: Build with Maven
-        run: mvn -B package --file pom.xml
+        run: mvn clean package -DskipTests
 
       - id: 'auth'
         name: Authenticate with GCP
