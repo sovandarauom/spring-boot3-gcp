@@ -43,8 +43,6 @@ jobs:
         name: Deploy JAVA project
         uses: 'google-github-actions/deploy-appengine@v1'
         with:
-          service_name: default
-          version_name: latest
           deliverables: ${{ github.workspace }}/src/main/appengine/app.yaml
 
       # Example of using the output
