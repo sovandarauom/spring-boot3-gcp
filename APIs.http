@@ -1,1 +1,28 @@
-GET localhost:8080/api/v1/users HTTP/1.1
+### Create User
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "name": "User A",
+  "email": "usera@mail.com",
+  "country": "KH"
+}
+
+### Find by id
+GET http://localhost:8080/api/v1/users/{{id}}
+Accept: application/json
+
+### Find by country
+GET http://localhost:8080/api/v1/users/country/{{name}}
+Accept: application/json
+
+### Find All
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+
+### Delete by id
+GET http://localhost:8080/api/v1/users/{{id}}
+Accept: application/json
+
+
+
