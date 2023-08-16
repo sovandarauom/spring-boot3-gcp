@@ -5,7 +5,11 @@ on:
     branches: [ "develop" ]
 
 jobs:
-  build:
+  build-deploy:
+    environment: DEV
+    permissions:
+      contents: 'read'
+      id-token: 'write'
     runs-on: ubuntu-latest
     steps:
       - uses: 'actions/checkout@v3'
@@ -18,15 +22,6 @@ jobs:
       - name: Build App
         run: mvn clean package -DskipTests
 
-  deploy:
-    needs: build
-    environment: DEV
-    permissions:
-      contents: 'read'
-      id-token: 'write'
-
-    runs-on: ubuntu-latest
-    steps:
       - id: 'auth-gcp'
         name: 'Authenticate to Google Cloud'
         uses: 'google-github-actions/auth@v1'
