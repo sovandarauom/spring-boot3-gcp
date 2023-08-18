@@ -1,1 +1,8 @@
-
+springdoc:
+  version: '@springdoc.version@'
+  swagger-ui:
+    use-root-path: true
+  show-actuator: false
+spring:
+  jackson:
+    default-property-inclusion: non_null

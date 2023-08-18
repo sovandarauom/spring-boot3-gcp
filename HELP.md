@@ -17,6 +17,8 @@ The following guides illustrate how to use some features concretely:
 
 ### Others
 
+* [WebFlux Security](https://docs.spring.io/spring-security/reference/reactive/configuration/webflux.html)
+* [Workload identity federation](https://cloud.google.com/iam/docs/workload-identity-federation?authuser=2&_ga=2.78697940.-1333798628.1684045005&_gac=1.61873630.1691330473.Cj0KCQjwib2mBhDWARIsAPZUn_kQbVHzbTHJ5YktWQ2wNxXAXj3Wa8MICBiQSKE-THkKrhDbj_lX-YoaAhUKEALw_wcB)
 * [Using environments for deployment](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment)
 * [How to use GitHub Actions environment variables](https://snyk.io/blog/how-to-use-github-actions-environment-variables/)
 * [Encrypted secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
