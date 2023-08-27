@@ -27,3 +27,51 @@ The following guides illustrate how to use some features concretely:
 * [GitHub Action authenticates to Google Cloud](https://github.com/google-github-actions/auth#examples)
 * [Create a CI/CD Pipeline With Google App Engine and GitHub Actions](https://www.linkedin.com/pulse/create-cicd-pipeline-google-app-engine-github-actions-samuel-ichinga/)
 * [Deploy a Java app to Google Cloud App Engine auto by create git tag using GitHub Action](https://medium.com/@lxlgarnett/deploy-a-java-app-to-google-cloud-app-engine-auto-by-create-git-tag-using-github-action-1401e4c30faa)
+
+### Setup local environment
+
+#### Prerequisite
+
+- gcloud CLI
+- Google Cloud Account and Project
+- JAVA 17
+- MAVEN
+
+
+
+#### Login with Google cloud
+
+
+```shell
+$ gcloud auth login
+```
+
+#### Create config
+```shell
+$ gcloud config configurations create <config-name>
+```
+
+#### Switch config
+```shell
+$ gcloud config configurations list
+$ gcloud config configurations activate <config-name>
+```
+
+#### Using default credential
+
+```shell
+$ gcloud auth application-default login
+```
+
+#### Start Maven
+```shell
+$ ./mvwn spring-boot:run
+```
+
+#### Package and deploy
+```shell
+$ ./mvwn clean package
+$ gcloud deploy
+```
+
+

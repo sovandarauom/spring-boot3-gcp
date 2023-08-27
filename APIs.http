@@ -1,5 +1,5 @@
 ### Create User
-POST http://localhost:8080/api/v1/users
+POST http://localhost:8080/api/users/v1/create
 Content-Type: application/json
 
 {
@@ -9,19 +9,19 @@ Content-Type: application/json
 }
 
 ### Find by id
-GET http://localhost:8080/api/v1/users/{{id}}
+GET http://localhost:8080/api/users/v1/find/{{id}}
 Accept: application/json
 
 ### Find by country
-GET http://localhost:8080/api/v1/users/country/{{name}}
+GET http://localhost:8080/api/users/v1/country/{{name}}
 Accept: application/json
 
 ### Find All
-GET http://localhost:8080/api/v1/users
+GET http://localhost:8080/api/users/v1/all
 Accept: application/json
 
 ### Delete by id
-GET http://localhost:8080/api/v1/users/{{id}}
+GET http://localhost:8080/api/users/v1/delete/{{id}}
 Accept: application/json
 
 

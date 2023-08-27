@@ -1,4 +1,4 @@
-package com.newbie.springboot3gcp.handlers;
+package com.newbie.springboot3gcp.exception;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

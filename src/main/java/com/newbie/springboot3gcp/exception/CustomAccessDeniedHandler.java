@@ -1,4 +1,4 @@
-package com.newbie.springboot3gcp.handlers;
+package com.newbie.springboot3gcp.exception;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
